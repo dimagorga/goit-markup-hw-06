@@ -405,7 +405,7 @@ img{
     margin-bottom: 30px;
 }
 
-.modal-policy{
+.modal-policy-link{
     color: var(--accent-color);
     text-decoration-line: underline;
 }
