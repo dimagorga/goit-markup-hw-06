@@ -407,7 +407,11 @@ img{
 
 .modal-policy-link{
     color: var(--accent-color);
-    text-decoration-line: underline;
+    text-decoration: none;
+    text-decoration-line: underline;    
+}
+.modal-policy-link:visited{
+    color: var(--accent-color);
 }
 
 
