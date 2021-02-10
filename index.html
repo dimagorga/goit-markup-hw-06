@@ -387,37 +387,40 @@
             <h2 class="modal-title">
                 Оставьте свои данные, мы вам перезвоним
             </h2>
-            <form class="modal-form">  
-                <ul class="form-list list">
-                    <li class="form-list-item">
-                        <label class="label-input" for="name">Имя</label>
-                        <input class="form-item" type="text" name="name" id="name">
-                        <svg class="modal-form-icon" width="12" height="12">
-                            <use href="./images/svg/sprite.svg#user-icon"></use>
-                        </svg>
-                    </li>
-                    <li class="form-list-item">
-                        <label class="label-input" for="tel">Телефон</label>
-                        <input class="form-item" type="tel" name="tel" id="tel">
-                        <svg class="modal-form-icon" width="12" height="12">
-                            <use href="./images/svg/sprite.svg#tel-icon"></use>
-                        </svg>
-                    </li>
-                    <li class="form-list-item">
-                        <label class="label-input" for="mail">Почта</label>
-                        <input class="form-item" type="email" name="mail" id="mail">
-                        <svg class="modal-form-icon" width="12" height="12" >
-                            <use href="./images/svg/sprite.svg#mail-icon"></use>
-                        </svg>
-                    </li>
-                    <li class="form-list-item">
-                        <label class="label-input" for="comment">Комментарий</label>
-                        <textarea class="comment-field" name="comment" id="comment" placeholder="Введите текст"></textarea>
-                    </li>
-                </ul>
+            <form> 
+                <div class="modal-form">
+                    <ul class="form-list list">
+                        <li class="form-list-item">
+                            <label class="label-input" for="name">Имя</label>
+                            <input class="form-item" type="text" name="name" id="name">
+                            <svg class="modal-form-icon" width="12" height="12">
+                                <use href="./images/svg/sprite.svg#user-icon"></use>
+                            </svg>
+                        </li>
+                        <li class="form-list-item">
+                            <label class="label-input" for="tel">Телефон</label>
+                            <input class="form-item" type="tel" name="tel" id="tel">
+                            <svg class="modal-form-icon" width="12" height="12">
+                                <use href="./images/svg/sprite.svg#tel-icon"></use>
+                            </svg>
+                        </li>
+                        <li class="form-list-item">
+                            <label class="label-input" for="mail">Почта</label>
+                            <input class="form-item" type="email" name="mail" id="mail">
+                            <svg class="modal-form-icon" width="12" height="12" >
+                                <use href="./images/svg/sprite.svg#mail-icon"></use>
+                            </svg>
+                        </li>
+                        <li class="form-list-item">
+                            <label class="label-input" for="comment">Комментарий</label>
+                            <textarea class="comment-field" name="comment" id="comment" placeholder="Введите текст"></textarea>
+                        </li>
+                    </ul>
+                </div> 
+                
                 <div class="agreement">
-                    <input type="checkbox" name="policy" id="policy">
-                    <label for="policy">Соглашаюсь с рассылкой и принимаю 
+                    <input class="checkbox" type="checkbox" name="policy" id="policy">
+                    <label class="label" for="policy">Соглашаюсь с рассылкой и принимаю 
                         <a class="modal-policy-link" href="/">Условия договора</a>
                     </label>
                 </div>               

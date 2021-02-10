@@ -890,8 +890,8 @@ img{
 }
 
 .modal-form{
-    margin-left: 41px;
-    margin-right: 39px;
+    padding-left: 41px;
+    padding-right: 39px;
 }
 
 
@@ -998,7 +998,50 @@ img{
     font-size: 14px;
     line-height: 1,714;
     letter-spacing: 0.03em;
-    margin-bottom: 30px;
+    margin-bottom: 30px;    
+}
+
+.checkbox{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+
+}
+
+.label{
+    display: block;
+    padding-left: 77px;
+    padding-right: 50px;
+}
+
+.checkbox + .label::before{
+    position: absolute;
+    left: 54px;
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    background-image: url(../images/svg/not-check.svg);
+
+    transition: background-color 250ms var(--timing-function);
+    
+
+}
+
+.checkbox:checked + .label::before{
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    border-radius: 2px;
+    background-color: var(--accent-color);
+    background-image: url(../images/svg/icon-check.svg);
+    
 }
 
 .modal-policy-link{
