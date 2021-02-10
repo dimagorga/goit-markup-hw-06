@@ -263,6 +263,12 @@ img{
     cursor: pointer;
 
     padding: 10px 32px; 
+
+    transition: background-color 250ms var(--timing-function);
+}
+
+.button-link:hover{
+    background-color:#188CE8;
 }
 /* =====hero end===== */
 
@@ -669,7 +675,14 @@ img{
     cursor: pointer;
 
     padding: 10px  62px 10px 29px ;
+
+    transition: background-color 250ms var(--timing-function);
 }
+
+.button-link-footer:hover{
+    background-color:#188CE8;
+}
+
 .footer-icon{
     position: absolute;
     top: 13px;
@@ -1059,6 +1072,14 @@ img{
     margin: auto;
     padding-left: 55px;
     padding-right: 55px;
+
+    
+
 }
+
+/* .button-link.submit:hover{
+    background-color: #188CE8;
+} */
+
 /* =======modal======= */
 
