@@ -1015,8 +1015,8 @@ img{
 
 .label{
     display: block;
-    padding-left: 77px;
-    padding-right: 50px;
+    margin-left: 77px;
+    margin-right: 50px;
 }
 
 .checkbox + .label::before{
