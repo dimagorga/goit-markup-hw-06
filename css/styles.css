@@ -954,7 +954,6 @@ img{
     transition: border-color 250ms var(--timing-function);
 }
 
-
 .form-item:focus {
     outline: 0;
     outline-offset: 0;
@@ -966,10 +965,12 @@ img{
     transition: fill 250ms var(--timing-function);
 }
 
+.form-list-item:hover > .form-item,
 .form-list-item:focus-within > .form-item{
     border-color:  var(--accent-color);
 }
 
+.form-list-item:hover > .modal-form-icon,
 .form-list-item:focus-within > .modal-form-icon{
     fill: var(--accent-color);
 }
@@ -993,7 +994,7 @@ img{
     outline-offset: 0;
 }
 
-
+.form-list-item:hover > .comment-field,
 .form-list-item:focus-within > .comment-field{
     border-color:  var(--accent-color);
 }
@@ -1042,9 +1043,9 @@ img{
     background-image: url(../images/svg/not-check.svg);
 
     transition: background-color 250ms var(--timing-function);
-    
-
 }
+
+
 
 .checkbox:checked + .label::before{
     content: "";
