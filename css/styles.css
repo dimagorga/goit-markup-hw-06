@@ -331,8 +331,8 @@ img{
 }
 
 .modal-form{
-    padding-left: 41px;
-    padding-right: 39px;
+    padding: 40px 39px 0px 41px;
+    margin-bottom: 20px;
 }
 
 
@@ -343,7 +343,7 @@ img{
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--title-text-color);
-    margin: 40px 39px 12px 41px;
+    margin-bottom:  12px;
 }
 .form-list{
     width: 448px;
@@ -365,7 +365,7 @@ img{
 .label-input{
     display: block;
     font-size: 12px;
-    line-height: 1,166;
+    line-height: 1.166;
     letter-spacing: 0.01em;
     color: var(--main-text-color);
     margin-bottom: 4px;
@@ -459,6 +459,7 @@ img{
     display: block;
     margin-left: 77px;
     margin-right: 50px;
+    
 }
 
 .checkbox + .label::before{
@@ -468,22 +469,33 @@ img{
     display: inline-block;
     width: 16px;
     height: 15px;
-    background-image: url(../images/svg/not-check.svg);
+    border: solid 2px var(--title-text-color);
+    border-radius: 2px;
+    box-sizing: border-box;   
 
-    transition: background-color 250ms var(--timing-function);
+    transition: background-color 250ms var(--timing-function),
+    border 250ms var(--timing-function);
 }
-
-
 
 .checkbox:checked + .label::before{
     content: "";
     display: inline-block;
     width: 16px;
     height: 15px;
+    border:none;
     border-radius: 2px;
     background-color: var(--accent-color);
     background-image: url(../images/svg/icon-check.svg);
     
+}
+.checkbox:focus + .label::before{        
+    border: solid 2px var(--accent-color);
+    border-radius: 2px;    
+}
+
+.checkbox:checked:focus + .label::before{
+    border: none;
+    box-sizing: border-box;
 }
 
 .modal-policy-link{
@@ -838,7 +850,7 @@ img{
     align-items: flex-start;
     width: 206px;
     height: 80px;
-    margin-right: 93px;
+    margin-right: auto;
 }
 
 .invitation-title{
