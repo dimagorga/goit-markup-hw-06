@@ -296,6 +296,7 @@ img{
     background: var(--background-main-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
+    padding: 40px;
 
     transform: translate(-50%, -50%) scale(1);
     transition: transform 250ms var(--timing-function);
@@ -330,8 +331,7 @@ img{
     pointer-events: none;
 }
 
-.modal-form{
-    padding: 40px 39px 0px 41px;
+.modal-form{    
     margin-bottom: 20px;
 }
 
@@ -345,24 +345,20 @@ img{
     color: var(--title-text-color);
     margin-bottom:  12px;
 }
-.form-list{
-    width: 448px;
-    height: 342px;  
-    margin-bottom: 20px;
-}
 
-.form-list-item{
-    display: flex;
-    flex-direction: column;
-    position: relative;
-}
 
-.form-list-item:not(:last-child){
+.label-input:not(:last-child){
     margin-bottom: 10px;
+}
+
+.label-title{
+    display: inline-block;
+    margin-bottom: 4px;
 }
 
 
 .label-input{
+    position: relative;
     display: block;
     font-size: 12px;
     line-height: 1.166;
@@ -382,7 +378,7 @@ img{
     transition: border-color 250ms var(--timing-function);
 }
 
-.form-item:focus {
+.form-item:focus{
     outline: 0;
     outline-offset: 0;
 }
@@ -393,17 +389,15 @@ img{
     transition: fill 250ms var(--timing-function);
 }
 
-.form-list-item:hover > .form-item,
-.form-list-item:focus-within > .form-item{
+.label-input:hover > .form-item,
+.label-input:focus-within > .form-item{
     border-color:  var(--accent-color);
 }
 
-.form-list-item:hover > .modal-form-icon,
-.form-list-item:focus-within > .modal-form-icon{
+.label-input:hover > .modal-form-icon,
+.label-input:focus-within > .modal-form-icon{
     fill: var(--accent-color);
 }
-
-
 
 .comment-field{
     width: 448px;
@@ -422,12 +416,10 @@ img{
     outline-offset: 0;
 }
 
-.form-list-item:hover > .comment-field,
-.form-list-item:focus-within > .comment-field{
+.label-input:hover > .comment-field,
+.label-input:focus-within > .comment-field{
     border-color:  var(--accent-color);
 }
-
-
 
 .comment-field::placeholder{
     font-size: 14px;
@@ -452,14 +444,12 @@ img{
     padding: 0;
     clip: rect(0 0 0 0);
     overflow: hidden;
-
 }
 
 .label{
     display: block;
-    margin-left: 77px;
-    margin-right: 50px;
-    
+    margin-left: 37px;
+    margin-right: 10px;    
 }
 
 .checkbox + .label::before{
@@ -516,9 +506,6 @@ img{
     margin: auto;
     padding-left: 55px;
     padding-right: 55px;
-
-    
-
 }
 
 /* =======modal======= */
@@ -533,8 +520,7 @@ img{
 }
 
 .advantages{
-    display: flex;
-    
+    display: flex;    
 }
 
 .advantages-list-item{
@@ -553,8 +539,7 @@ img{
     background-repeat: no-repeat;
     background-position: center;
     margin-bottom: 30px;
-    border-radius: 4px;
-    
+    border-radius: 4px;    
 }
 
 .icon-antenna::before {
@@ -899,7 +884,11 @@ img{
     background-color: var(--background-hero-color);
     padding: 15px 16px;
     color: var(--background-main-color);
+    transition: border-color 250ms var(--timing-function);
+}
 
+.input-footer:hover{
+    border-color: var(--background-main-color);
 }
 
 .input-footer::placeholder{
