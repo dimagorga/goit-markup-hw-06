@@ -331,15 +331,11 @@ img{
     pointer-events: none;
 }
 
-.modal-form{    
-    margin-bottom: 20px;
-}
-
 
 .modal-title{
     font-weight: bold;
     font-size: 20px;
-    line-height: 1,150;
+    line-height: 1.150;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--title-text-color);
@@ -349,6 +345,10 @@ img{
 
 .label-input:not(:last-child){
     margin-bottom: 10px;
+}
+
+.label-input.comment{
+    margin-bottom: 20px;
 }
 
 .label-title{
@@ -366,6 +366,7 @@ img{
     color: var(--main-text-color);
     margin-bottom: 4px;
 }
+
 .form-item{
     display: flex;
     flex-direction: column;
@@ -423,14 +424,15 @@ img{
 
 .comment-field::placeholder{
     font-size: 14px;
-    line-height: 1,142;
+    line-height: 1.142;
     letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 0.5);
 }
 
 .agreement{
+    position: relative;
     font-size: 14px;
-    line-height: 1,714;
+    line-height: 1.714;
     letter-spacing: 0.03em;
     margin-bottom: 30px;    
 }
@@ -454,7 +456,8 @@ img{
 
 .checkbox + .label::before{
     position: absolute;
-    left: 54px;
+    left: 14px;
+    top: 4px;
     content: "";
     display: inline-block;
     width: 16px;
@@ -893,7 +896,7 @@ img{
 
 .input-footer::placeholder{
     font-size: 16px;
-    line-height: 1,250;
+    line-height: 1.250;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
 }
